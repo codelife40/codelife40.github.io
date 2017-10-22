@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="" />
-	<title>About | </title>
+	<title>tags | </title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="http://localhost:4000/feed/" rel="alternate" title="" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css">
@@ -15,7 +15,7 @@
     <div id="container">
       <div id="main" role="main">
         <header>
-        <h1>About</h1>
+        <h1>tags</h1>
         </header>
 
         <nav>
@@ -31,15 +31,36 @@
 
 
         <section class="post">
-<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+<div id="tag_cloud">
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<a href="#Other" title="Other" rel="1">Other</a>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+</div>
+
+<ul class="listing">
+
+  <li class="listing-seperator" id="Other">Other</li>
+
+  <li class="listing-item">
+  <time datetime="2017-10-22">2017-10-22</time>
+  <a href="http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article.html" title="It's My First Article">It's My First Article</a>
+  </li>
+
+
+</ul>
+
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>
 
 
 </section>

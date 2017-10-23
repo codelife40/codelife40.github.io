@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-22T18:34:26+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">It’s My First Article</title><link href="http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article.html" rel="alternate" type="text/html" title="It's My First Article" /><published>2017-10-22T11:50:57+08:00</published><updated>2017-10-22T11:50:57+08:00</updated><id>http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article</id><content type="html" xml:base="http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-23T17:12:37+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Java基础篇</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87.html" rel="alternate" type="text/html" title="Java基础篇" /><published>2017-10-23T16:21:57+08:00</published><updated>2017-10-23T16:21:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+
+&lt;h3 id=&quot;第1章java程序设计概述&quot;&gt;第1章：Java程序设计概述&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1996年Java第一次发布&lt;/li&gt;
+  &lt;li&gt;Java的关键术语
+    &lt;ul&gt;
+      &lt;li&gt;简单性
+        &lt;ul&gt;
+          &lt;li&gt;相对C++而言，剔除了C++中不适当的特性，如头文件、指针运营、结构、联合、操作符重载、虚基类等&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;面向对象&lt;/li&gt;
+      &lt;li&gt;分布式&lt;/li&gt;
+      &lt;li&gt;健壮性
+        &lt;ul&gt;
+          &lt;li&gt;Java和C++最大的不同在于Java采用的指针模型可以消除重写内存和损坏数据的可能性&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;安全性
+        &lt;ul&gt;
+          &lt;li&gt;体系结构中立
+            &lt;ul&gt;
+              &lt;li&gt;Java编译器通过生成与特定的计算机体系结构无关的字节码指令来实现这一特性。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;可移植性
+        &lt;ul&gt;
+          &lt;li&gt;除用户界面有关的部分外，其他Java库都能很好的支持平台独立性&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;解释型
+        &lt;ul&gt;
+          &lt;li&gt;java解释器可以在任何移植了解释器的机器上执行Java字节码。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;高性能
+        &lt;ul&gt;
+          &lt;li&gt;字节码可以（在运行时刻）动态地翻译成对应运行这个应用的特定CPU的机器码。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;动态性&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">35岁空杯心态重拾技术</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF.html" rel="alternate" type="text/html" title="35岁空杯心态重拾技术" /><published>2017-10-23T16:03:57+08:00</published><updated>2017-10-23T16:03:57+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF.html">&lt;p&gt;至今35岁，算算时间，从事互联网行业已有12年，目前在公司混的也不差，也算中层技术管理，但是这几年在团队管理上花了太多时间，动手编码的时间变得很少（或者说几乎没有），不想找理由，更多的是自己的原因。。。虽然在看问题的视野，架构能力都有一定的提升，但是现在更多的是要靠团队成员才能完成，一些紧急的事情发生，也只能依赖别人，自己在一盘干着急。这种状态不是自己所喜欢的。&lt;/p&gt;
+
+&lt;p&gt;前几天看「左耳朵耗子」的一篇文章，他从事IT行业20年，至今仍然在编码，他认为细节是魔鬼，代码中全是细节，只有掌握足够多的细节，设计出来的方案才是真正可以落地的，而不是模糊的。他非常清晰的知道每天要做什么，持续不断的提升核心竞争力。&lt;/p&gt;
+
+&lt;p&gt;回想自己，如果一旦离开今天靠时间积累下来的成果，离开公司这个大平台，自己是否在别的功能都能立足的很好？只有自身有真正的能力才是最主要的。所以下定决定重拾技术，也填补内心的空虚（对技术无把控力的空虚）。&lt;/p&gt;
+
+&lt;p&gt;只要坚持下去，相信一切都不会太晚。&lt;/p&gt;</content><author><name></name></author><category term="空杯心态" /><summary type="html">至今35岁，算算时间，从事互联网行业已有12年，目前在公司混的也不差，也算中层技术管理，但是这几年在团队管理上花了太多时间，动手编码的时间变得很少（或者说几乎没有），不想找理由，更多的是自己的原因。。。虽然在看问题的视野，架构能力都有一定的提升，但是现在更多的是要靠团队成员才能完成，一些紧急的事情发生，也只能依赖别人，自己在一盘干着急。这种状态不是自己所喜欢的。</summary></entry><entry><title type="html">It’s My First Article</title><link href="http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article.html" rel="alternate" type="text/html" title="It's My First Article" /><published>2017-10-22T11:50:57+08:00</published><updated>2017-10-22T11:50:57+08:00</updated><id>http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article</id><content type="html" xml:base="http://localhost:4000/jekyll/update/%E7%94%9F%E6%B4%BB/2017/10/22/Its-My-First-Article.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

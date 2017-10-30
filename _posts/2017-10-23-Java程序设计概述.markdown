@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java基础篇"
+title:  "【Java基础篇】第1章：Java程序设计概述"
 date:   2017-10-23 16:21:57 +0800
 categories: Java基础篇
 tags: [Java]
@@ -28,5 +28,7 @@ tags: [Java]
 	- 高性能
 		- 字节码可以（在运行时刻）动态地翻译成对应运行这个应用的特定CPU的机器码。
 	- 动态性 
+- Java语言的发展状况
+![](media/15087615445941.jpg)
 
 

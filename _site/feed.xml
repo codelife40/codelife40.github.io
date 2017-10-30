@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-23T19:54:58+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Java基础篇</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87-%E7%AC%AC1%E7%AB%A0Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0.html" rel="alternate" type="text/html" title="Java基础篇" /><published>2017-10-23T16:21:57+08:00</published><updated>2017-10-23T16:21:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87-%E7%AC%AC1%E7%AB%A0Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E5%9F%BA%E7%A1%80%E7%AF%87-%E7%AC%AC1%E7%AB%A0Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-26T04:43:41+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">【Java基础篇】第3章：Java基本程序设计结构</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html" rel="alternate" type="text/html" title="【Java基础篇】第3章：Java基本程序设计结构" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+
+&lt;h3 id=&quot;第2章java基本程序设计结构&quot;&gt;第2章：Java基本程序设计结构&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java语言规范，main方法必须声明为public&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Java虚拟机从指定类的main方法开始执行。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class ClassName {
+	public static void main(String[] args) {
+		System.out.print(&quot;hello&quot;);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3.3 数据类型&lt;/p&gt;
+
+&lt;p&gt;Java是一种强类型语言，共有8种基本类型。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4种整型
+    &lt;ul&gt;
+      &lt;li&gt;int：4字节（-20亿 ~ 20亿）&lt;/li&gt;
+      &lt;li&gt;short：2字节（-32768 ~ 32768）&lt;/li&gt;
+      &lt;li&gt;long：8字节&lt;/li&gt;
+      &lt;li&gt;byte：1字节（-128 ~ 127）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2种浮点类型
+    &lt;ul&gt;
+      &lt;li&gt;float：4字节（有效位数为6~7位）。float类型的数值有一个F或f的后缀。如果没有F或f后缀的，默认为double类型。也可以在浮点数值后添加D或者d&lt;/li&gt;
+      &lt;li&gt;double：8字节（有效位数为15位）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;1种用于表示Unicode编码的字符单元的字符类型char&lt;/li&gt;
+  &lt;li&gt;1种表示真值的boolean类型&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;码点（code point）是指与一个编码表中的某个子符对应的代码值。在Unicode标准中，码点采用十六进制书写，并加上前缀U+&lt;/p&gt;
+
+&lt;p&gt;UTF-16编码采用不同长度的编码表示所有Unicode码点。&lt;/p&gt;
+
+&lt;p&gt;强烈建议不要在程序中使用char类型。&lt;/p&gt;
+
+&lt;p&gt;在Java中，变量的声明尽可能的靠近第一次使用的地方，这是一种良好的编码习惯。&lt;/p&gt;
+
+&lt;p&gt;final指示常量。只能被赋值一次，一旦被赋值之后，就不能再更改了。习惯上常量名全使用大写。&lt;/p&gt;
+
+&lt;p&gt;枚举类型：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum Size { 
+	SMALL, 
+	MEDIUM, 
+	LARGE, 
+	EXTR_LARCE 
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Java字符串就是Unicode字符序列。Java没有内置的字符串类型，而是在标准类库中提供了一个预定义类。&lt;/p&gt;
+
+&lt;p&gt;使用string.equals(t)  来比较两个字符串是否相等，千万不要使用 = 号&lt;/p&gt;
+
+&lt;p&gt;if(str != null &amp;amp;&amp;amp; str.length() != 0)&lt;/p&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">【Java基础篇】第2章：Java程序设计环境</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html" rel="alternate" type="text/html" title="【Java基础篇】第2章：Java程序设计环境" /><published>2017-10-23T20:30:57+08:00</published><updated>2017-10-23T20:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+
+&lt;h3 id=&quot;第2章java程序设计环境&quot;&gt;第2章：Java程序设计环境&lt;/h3&gt;
+
+&lt;h4 id=&quot;java术语&quot;&gt;Java术语&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;术语名&lt;/th&gt;
+      &lt;th&gt;缩写&lt;/th&gt;
+      &lt;th&gt;解释&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Java Development Kit&lt;/td&gt;
+      &lt;td&gt;JDK&lt;/td&gt;
+      &lt;td&gt;编写Java程序的程序员使用的软件,Java SE的开发包。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Java Runtime Environment&lt;/td&gt;
+      &lt;td&gt;JRE&lt;/td&gt;
+      &lt;td&gt;Java运行时环境，运行Java程序的用户使用的软件。它包含虚拟机但不包含编译器。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Server JRE&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;在服务器上运行Java程序的软件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Standard Edition&lt;/td&gt;
+      &lt;td&gt;SE&lt;/td&gt;
+      &lt;td&gt;用于桌面或简单服务器应用的Java平台&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Enterprise Edition&lt;/td&gt;
+      &lt;td&gt;EE&lt;/td&gt;
+      &lt;td&gt;用于复杂服务器应用的Java平台&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Micro Edition&lt;/td&gt;
+      &lt;td&gt;ME&lt;/td&gt;
+      &lt;td&gt;用于手机和其他小型设备的java平台&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Java FX&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;用于图形化用户界面的一个替代工具包，在Oracle的Java SE发布版本中提供&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;OpenJDK&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;Java SE的一个免费开源实现，不包含浏览器集成或JavaFX&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Java 2&lt;/td&gt;
+      &lt;td&gt;J2&lt;/td&gt;
+      &lt;td&gt;一个过时的术语，用于描述1998-2006年之间的Java版本&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Software Development Kit&lt;/td&gt;
+      &lt;td&gt;SDK&lt;/td&gt;
+      &lt;td&gt;一个过时的术语，用于描述1998-2006年之间的JDK&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Update&lt;/td&gt;
+      &lt;td&gt;u&lt;/td&gt;
+      &lt;td&gt;Oracle的术语，表示bug修正版本&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;NetBeans&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;Oracle的集成开发环境&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Java最开始版本是1.0，之后版本是1.1，1.2，但是Sun公司认为小数点的版本无法体系出Java的版本更新，所以到1.5的时候直接改成版本号是5.0 这个版本是对外的，内部的版本还是以1.7.0，1.8.0，比如 java SE 8u31,表示对是对Java SE 8的第31次更新，对应的内部版本号就是1.8.0_31&lt;/p&gt;
+
+&lt;p&gt;JDK 安装好后，需要在 ~/.bash_profile里添加到  PATH中  export PATH&lt;/p&gt;
+
+&lt;p&gt;javac -version  //查看java版本&lt;/p&gt;
+
+&lt;p&gt;默认安装好JDK后，默认不会安装源文件和文档。&lt;/p&gt;
+
+&lt;p&gt;库源文件在JDK中以一个压缩文件src.zip的形式发布。必须将其解压后才能访问源码。操作步骤如下：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;在/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/ 目录下 mkdir javasrc&lt;/li&gt;
+  &lt;li&gt;sudo cp src.zip javasrc&lt;/li&gt;
+  &lt;li&gt;sudo jar xvf src.zip&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;src.zip文件中包含了所有公共类库的源代码。要想获得更多的源代码（例如：编译器、虚拟机、本地方法以及私有辅助类），可以访问网站：http://jdk8.java.net&lt;/p&gt;
+
+&lt;p&gt;javac:Java编译器
+javac webcome.java  //把java代码编译成class字节码
+java webcome //java启动虚拟机执行放在class中的字节码&lt;/p&gt;
+
+&lt;p&gt;applet部分内容-略&lt;/p&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">【Java基础篇】第1章：Java程序设计概述</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0.html" rel="alternate" type="text/html" title="【Java基础篇】第1章：Java程序设计概述" /><published>2017-10-23T16:21:57+08:00</published><updated>2017-10-23T16:21:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
 
 &lt;h3 id=&quot;第1章java程序设计概述&quot;&gt;第1章：Java程序设计概述&lt;/h3&gt;
 
@@ -45,6 +206,8 @@
       &lt;li&gt;动态性&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;Java语言的发展状况
+&lt;img src=&quot;media/15087615445941.jpg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">35岁空杯心态重拾技术</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF.html" rel="alternate" type="text/html" title="35岁空杯心态重拾技术" /><published>2017-10-23T16:03:57+08:00</published><updated>2017-10-23T16:03:57+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/10/23/35%E5%B2%81%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81%E9%87%8D%E6%8B%BE%E6%8A%80%E6%9C%AF.html">&lt;p&gt;至今35岁，算算时间，从事互联网行业已有12年，目前在公司混的也不差，也算中层技术管理，但是这几年在团队管理上花了太多时间，动手编码的时间变得很少（或者说几乎没有），不想找理由，更多的是自己的原因。。。虽然在看问题的视野，架构能力都有一定的提升，但是现在更多的是要靠团队成员才能完成，一些紧急的事情发生，也只能依赖别人，自己在一盘干着急。这种状态不是自己所喜欢的。&lt;/p&gt;
 
 &lt;p&gt;前几天看「左耳朵耗子」的一篇文章，他从事IT行业20年，至今仍然在编码，他认为细节是魔鬼，代码中全是细节，只有掌握足够多的细节，设计出来的方案才是真正可以落地的，而不是模糊的。他非常清晰的知道每天要做什么，持续不断的提升核心竞争力。&lt;/p&gt;

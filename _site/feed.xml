@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-26T04:43:41+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">【Java基础篇】第3章：Java基本程序设计结构</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html" rel="alternate" type="text/html" title="【Java基础篇】第3章：Java基本程序设计结构" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-07T22:26:57+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">201711月学习计划</title><link href="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html" rel="alternate" type="text/html" title="201711月学习计划" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92</id><content type="html" xml:base="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html">&lt;h2 id=&quot;201711月学习计划&quot;&gt;2017.11月学习计划&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-阅读&quot;&gt;1. 阅读&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;《Java核心技术》&lt;/li&gt;
+  &lt;li&gt;《尽在双11》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-编码&quot;&gt;2. 编码&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python基础语法温习&lt;/li&gt;
+  &lt;li&gt;Go基础语法大概了解下&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-英语&quot;&gt;3. 英语&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;待定&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="学习计划" /><summary type="html">2017.11月学习计划</summary></entry><entry><title type="html">【Java基础篇】第3章：Java基本程序设计结构</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html" rel="alternate" type="text/html" title="【Java基础篇】第3章：Java基本程序设计结构" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
 
 &lt;h3 id=&quot;第2章java基本程序设计结构&quot;&gt;第2章：Java基本程序设计结构&lt;/h3&gt;
 
@@ -60,7 +77,140 @@
 
 &lt;p&gt;使用string.equals(t)  来比较两个字符串是否相等，千万不要使用 = 号&lt;/p&gt;
 
-&lt;p&gt;if(str != null &amp;amp;&amp;amp; str.length() != 0)&lt;/p&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">【Java基础篇】第2章：Java程序设计环境</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html" rel="alternate" type="text/html" title="【Java基础篇】第2章：Java程序设计环境" /><published>2017-10-23T20:30:57+08:00</published><updated>2017-10-23T20:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
+&lt;p&gt;if(str != null &amp;amp;&amp;amp; str.length() != 0)&lt;/p&gt;
+
+&lt;p&gt;格式符的转化：
+&lt;img src=&quot;media/15096347870030.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;格式化时间：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;System.out.printf(&quot;%tF&quot;,new Date());
+# 自定义日期格式，通过字符串格式化的方式，用%开头，然后加上索引号，以$结尾。如下
+System.out.printf(&quot;%1$s %2$tB %2$te %2$tY&quot;,&quot;Date:&quot;,new Date());
+# 也可以使用以下语句。用 &amp;lt; 号来表示前面参数格式将被再次使用
+System.out.printf(&quot;%s %tB %&amp;lt;te, %&amp;lt;tY&quot;, &quot;Due date:&quot;, new Date());
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;media/15096354498800.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;media/15096354745827.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;printf的格式说明：
+&lt;img src=&quot;media/15096364366019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;读取文件里，一般要指定文件的编码，如果没有指定，默认读取的是运行java机器的默认编码，这可能会导致同一段程序在不同默认机器编码的服务器上得到不一样的结果&lt;/p&gt;
+
+&lt;p&gt;先判断条件，可能不执行&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;while (condition) {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;至少执行一次&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;do {
+}
+while (condition)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以通过break+标签符号的方式来跳出多种嵌套循环。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int i = 20;
+int count = 20;
+read://定义一个标签符号
+while (i &amp;gt; 1) {
+	for (int j = 0;j&amp;lt;count;j++){
+
+		if (j == 10) {
+			break read;//跳出到标签符
+		}
+	}
+	System.out.println(Integer.toString(i));
+	i--;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;也可以通过定义lab来控制跳出语句。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lab:
+{
+    if (i&amp;lt;20) break lab;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;media/15098032015999.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;static 静态域定义。常用来定义变量或常量，比如一个类中定义了一个静态变量，所有的类对象都是共享这个静态变量。如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Class Employee {
+	private static int nextId = 1;
+	private int id;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;如果new Employee() 1000个对象，会有1000个类的id，但是他们会共享一个nextId&lt;/p&gt;
+
+&lt;p&gt;static final 静态变量。&lt;/p&gt;
+
+&lt;p&gt;静态方法是一种不能向对象实施操作的方法。有两种情况下使用静态方法：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一个方法不需要访问对象状态，其所需参数都是显示参数提供&lt;/li&gt;
+  &lt;li&gt;一个方法只需要访问类的静态域&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;每个类都可以有一个main方法，这是一个常用于对类进行单元测试的技巧。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public static void main(String[] args) {
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一个方法不能修改一个基本数据类型的参数（即数值型或布尔型）&lt;/li&gt;
+  &lt;li&gt;一个方法可以改变一个对象参数的状态&lt;/li&gt;
+  &lt;li&gt;一个方法不能让对象参数引用一个新的对象&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;包&quot;&gt;包&lt;/h4&gt;
+&lt;p&gt;使用包的主要原因是确保类名的唯一性。为了保证包名的绝对唯一性，Sun公司建议将公司的因特网域名以逆序形式作为包名。比如com.alibaba&lt;/p&gt;
+
+&lt;p&gt;从编译器的角度看，嵌套的包之间没有任何关系。比如java.util和java.util.jar包毫无关系&lt;/p&gt;
+
+&lt;p&gt;如果出现导入的两个包都包含相同的类，比如java.util和java.sql中都包含了 Date类，会提示包冲突。
+这是可以通过增加一个特定的import语句来解决。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import java.util.*;
+import java.sql.*;
+import java.util.Date; # 增加一个显示的导入
+
+import static java.lang.System.*; # 可以增加一个静态包的导入
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果想将一个类放入包中，就必须将包的名字放在源文件的开头。如下
+package com.google.hello&lt;/p&gt;
+
+&lt;p&gt;如果没有定义package，那么会将该类放入一个默认包&lt;/p&gt;
+
+&lt;p&gt;将包中的文件放到与完整的包名匹配的子目录中。如果包与目录不匹配，虚拟机就找不到类。&lt;/p&gt;
+
+&lt;p&gt;虚拟机要搜寻 com.google.core.Employee类文件，它首先要查看存储在jre/lib和jre/lib/ext目录下的归档文件中所存放的系统类文件。显然，在那里找不到相应的类文件，然后再查看类路径。建议利用-classpath选项设置类路径。&lt;/p&gt;
+
+&lt;p&gt;注释以  /** 开头，以*/结束&lt;/p&gt;
+
+&lt;p&gt;几个类设计的技巧：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一定要保证数据私有&lt;/li&gt;
+  &lt;li&gt;一定要对数据初始化：最好不要依赖系统的默认值，而是应该显示的初始化所有的数据。&lt;/li&gt;
+  &lt;li&gt;不要在类中使用过多的基本类型
+    &lt;ul&gt;
+      &lt;li&gt;如果有很多基本类型，可以封装成一个独立的类进行引用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;不是所有的域都需要独立的域访问器和域更改器&lt;/li&gt;
+  &lt;li&gt;将职责过多的类进行分解&lt;/li&gt;
+  &lt;li&gt;类名和方法名要能够体现他们的职责&lt;/li&gt;
+  &lt;li&gt;优先使用不可变的类&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">【Java基础篇】第2章：Java程序设计环境</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html" rel="alternate" type="text/html" title="【Java基础篇】第2章：Java程序设计环境" /><published>2017-10-23T20:30:57+08:00</published><updated>2017-10-23T20:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
 
 &lt;h3 id=&quot;第2章java程序设计环境&quot;&gt;第2章：Java程序设计环境&lt;/h3&gt;
 

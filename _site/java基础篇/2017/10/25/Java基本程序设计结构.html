@@ -95,6 +95,139 @@
 
 <p>if(str != null &amp;&amp; str.length() != 0)</p>
 
+<p>格式符的转化：
+<img src="media/15096347870030.jpg" alt="" /></p>
+
+<p>格式化时间：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.printf("%tF",new Date());
+# 自定义日期格式，通过字符串格式化的方式，用%开头，然后加上索引号，以$结尾。如下
+System.out.printf("%1$s %2$tB %2$te %2$tY","Date:",new Date());
+# 也可以使用以下语句。用 &lt; 号来表示前面参数格式将被再次使用
+System.out.printf("%s %tB %&lt;te, %&lt;tY", "Due date:", new Date());
+</code></pre></div></div>
+<p><img src="media/15096354498800.jpg" alt="" />
+<img src="media/15096354745827.jpg" alt="" /></p>
+
+<p>printf的格式说明：
+<img src="media/15096364366019.jpg" alt="" /></p>
+
+<p>读取文件里，一般要指定文件的编码，如果没有指定，默认读取的是运行java机器的默认编码，这可能会导致同一段程序在不同默认机器编码的服务器上得到不一样的结果</p>
+
+<p>先判断条件，可能不执行</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while (condition) {
+}
+</code></pre></div></div>
+
+<p>至少执行一次</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>do {
+}
+while (condition)
+</code></pre></div></div>
+
+<p>可以通过break+标签符号的方式来跳出多种嵌套循环。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int i = 20;
+int count = 20;
+read://定义一个标签符号
+while (i &gt; 1) {
+	for (int j = 0;j&lt;count;j++){
+
+		if (j == 10) {
+			break read;//跳出到标签符
+		}
+	}
+	System.out.println(Integer.toString(i));
+	i--;
+}
+
+</code></pre></div></div>
+
+<p>也可以通过定义lab来控制跳出语句。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lab:
+{
+    if (i&lt;20) break lab;
+}
+</code></pre></div></div>
+
+<p><img src="media/15098032015999.jpg" alt="" /></p>
+
+<p>static 静态域定义。常用来定义变量或常量，比如一个类中定义了一个静态变量，所有的类对象都是共享这个静态变量。如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Class Employee {
+	private static int nextId = 1;
+	private int id;
+}
+</code></pre></div></div>
+<p>如果new Employee() 1000个对象，会有1000个类的id，但是他们会共享一个nextId</p>
+
+<p>static final 静态变量。</p>
+
+<p>静态方法是一种不能向对象实施操作的方法。有两种情况下使用静态方法：</p>
+
+<ul>
+  <li>一个方法不需要访问对象状态，其所需参数都是显示参数提供</li>
+  <li>一个方法只需要访问类的静态域</li>
+</ul>
+
+<p>每个类都可以有一个main方法，这是一个常用于对类进行单元测试的技巧。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static void main(String[] args) {
+
+}
+</code></pre></div></div>
+
+<ul>
+  <li>一个方法不能修改一个基本数据类型的参数（即数值型或布尔型）</li>
+  <li>一个方法可以改变一个对象参数的状态</li>
+  <li>一个方法不能让对象参数引用一个新的对象</li>
+</ul>
+
+<h4 id="包">包</h4>
+<p>使用包的主要原因是确保类名的唯一性。为了保证包名的绝对唯一性，Sun公司建议将公司的因特网域名以逆序形式作为包名。比如com.alibaba</p>
+
+<p>从编译器的角度看，嵌套的包之间没有任何关系。比如java.util和java.util.jar包毫无关系</p>
+
+<p>如果出现导入的两个包都包含相同的类，比如java.util和java.sql中都包含了 Date类，会提示包冲突。
+这是可以通过增加一个特定的import语句来解决。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.*;
+import java.sql.*;
+import java.util.Date; # 增加一个显示的导入
+
+import static java.lang.System.*; # 可以增加一个静态包的导入
+</code></pre></div></div>
+
+<p>如果想将一个类放入包中，就必须将包的名字放在源文件的开头。如下
+package com.google.hello</p>
+
+<p>如果没有定义package，那么会将该类放入一个默认包</p>
+
+<p>将包中的文件放到与完整的包名匹配的子目录中。如果包与目录不匹配，虚拟机就找不到类。</p>
+
+<p>虚拟机要搜寻 com.google.core.Employee类文件，它首先要查看存储在jre/lib和jre/lib/ext目录下的归档文件中所存放的系统类文件。显然，在那里找不到相应的类文件，然后再查看类路径。建议利用-classpath选项设置类路径。</p>
+
+<p>注释以  /** 开头，以*/结束</p>
+
+<p>几个类设计的技巧：</p>
+
+<ul>
+  <li>一定要保证数据私有</li>
+  <li>一定要对数据初始化：最好不要依赖系统的默认值，而是应该显示的初始化所有的数据。</li>
+  <li>不要在类中使用过多的基本类型
+    <ul>
+      <li>如果有很多基本类型，可以封装成一个独立的类进行引用</li>
+    </ul>
+  </li>
+  <li>不是所有的域都需要独立的域访问器和域更改器</li>
+  <li>将职责过多的类进行分解</li>
+  <li>类名和方法名要能够体现他们的职责</li>
+  <li>优先使用不可变的类</li>
+</ul>
+
 
 </section>
 <section class="meta">
@@ -157,6 +290,8 @@ $(function(){
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             
+        url = 'http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html';
+        
         }
         if (url) {
             window.location = url;

@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-07T22:26:57+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">201711月学习计划</title><link href="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html" rel="alternate" type="text/html" title="201711月学习计划" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92</id><content type="html" xml:base="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html">&lt;h2 id=&quot;201711月学习计划&quot;&gt;2017.11月学习计划&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-14T09:12:33+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">【Java基础篇】第7章：异常、断言和日志</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html" rel="alternate" type="text/html" title="【Java基础篇】第7章：异常、断言和日志" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html">&lt;h2 id=&quot;第7章异常断言和日志&quot;&gt;第7章：异常、断言和日志&lt;/h2&gt;</content><author><name></name></author><category term="Java" /><summary type="html">第7章：异常、断言和日志</summary></entry><entry><title type="html">【Java基础篇】第6章：接口、lambda表达式与内部类</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html" rel="alternate" type="text/html" title="【Java基础篇】第6章：接口、lambda表达式与内部类" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html">&lt;h2 id=&quot;第六章接口lambda表达式与内部类&quot;&gt;第六章：接口、lambda表达式与内部类&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;接口不是类，而是对类的一组需求描述，这些类要遵从接口描述的统一格式进行定义。&lt;/li&gt;
+  &lt;li&gt;接口中所有的方法都自动的属于public。因此，在接口中声明方法时，不必提供关键字public。但是在实现类中必须将方法声明为public&lt;/li&gt;
+  &lt;li&gt;implements 实现接口的关键字  class Person implements Comparable&lt;/li&gt;
+  &lt;li&gt;可以使用instanceof来检查一个对象是否实现了某个特定的接口&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (anyObject instanceof Comparable ) {...}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;接口也可以扩展另外的接口，这个超类的使用方式一样。&lt;/li&gt;
+  &lt;li&gt;接口中也可以定义变量，接口中的域都自动被设为 public static final类型.虽然可以显示定义，但是并不推荐，因为没必要有那么多冗余的关键字。&lt;/li&gt;
+  &lt;li&gt;每个类只能够拥有一个超类，但却可以实现多个接口。这就为定义类的行为提供了极大的灵活性。比如要设计一个类具备克隆和比较的能力，实现两个接口即可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Employee implements Cloneable,Comparable {
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;有些情况下会有定义抽象类，然后在子类中重写抽象类中的方法。这个跟定义接口，然后继承接口实现方法有一定的相似性。但是抽象类有一个问题就是类的继承只能扩展一个类。&lt;/li&gt;
+  &lt;li&gt;浅拷贝：如果clone对象中引用了其他的子对象，在clone的时候不会克隆子对象。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lambda表达式&quot;&gt;lambda表达式&lt;/h3&gt;
+&lt;p&gt;lambda表达式语法：
+参数，箭头-&amp;gt;，以及一个表达式，如果代码要完成的计算无法放在一个表达式中，就可以将这些代码放在{}中，如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(String first,String second) - &amp;gt;
+{
+	return first.length() - second.length();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;即使lambda表达式没有参数，仍然要提供空括号，就像无参方法一样。如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;() - &amp;gt; { for (int i=100;i&amp;gt;=0;i++) System.out.print(i);}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;this::equals 等同于x-&amp;gt;this.equals(x)&lt;/li&gt;
+  &lt;li&gt;使用lambda表达式的重点是延迟执行&lt;/li&gt;
+  &lt;li&gt;repeat(10, () -&amp;gt; System.out.println(“hello,world”));&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;media/15105886744529.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;代理略高级技术需深入&quot;&gt;代理(略高级技术，需深入)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;利用代理可以在运行时创建一个实现了一组给定接口的新类，这种功能只有在编译时无法确定需要实现哪个接口时才有必要使用。&lt;/li&gt;
+  &lt;li&gt;创建代理对象，需要使用Proxy类的newProxyInstance方法，这个方法有三个参数：
+    &lt;ul&gt;
+      &lt;li&gt;类加载器(class loader)&lt;/li&gt;
+      &lt;li&gt;Class对象数组，每个元素都是需要实现的接口&lt;/li&gt;
+      &lt;li&gt;调用处理器&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;使用代理的原因：
+    &lt;ul&gt;
+      &lt;li&gt;路由对远程服务器的方法调用&lt;/li&gt;
+      &lt;li&gt;在程序运行期间，将用户接口事件与动作关联起来&lt;/li&gt;
+      &lt;li&gt;为调试，跟踪方法调用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;注意：代理类是在运行过程中创建的，一旦被创建，就变成了常规类，与虚拟机中的任何其他类没有什么区别&lt;/li&gt;
+  &lt;li&gt;所有的代理类都扩展于Proxy类，一个代理类只有一个实例域-调用处理器，它定义在Proxy的超类中。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">第六章：接口、lambda表达式与内部类 接口不是类，而是对类的一组需求描述，这些类要遵从接口描述的统一格式进行定义。 接口中所有的方法都自动的属于public。因此，在接口中声明方法时，不必提供关键字public。但是在实现类中必须将方法声明为public implements 实现接口的关键字 class Person implements Comparable 可以使用instanceof来检查一个对象是否实现了某个特定的接口</summary></entry><entry><title type="html">【Java基础篇】第5章：继承</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html" rel="alternate" type="text/html" title="【Java基础篇】第5章：继承" /><published>2017-11-07T22:30:57+08:00</published><updated>2017-11-07T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html">&lt;h2 id=&quot;第五章继承&quot;&gt;第五章：继承&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;is-a 关系是继承的一个明显特征。&lt;/li&gt;
+  &lt;li&gt;关键字 extends表示继承。表明正在构造的新类派生于一个已经存在的类，已存在的类称为超类(superclass)、基类(base class)或父类(parent class)&lt;/li&gt;
+  &lt;li&gt;使用super.getMethod()来调用超类中的方法。super不是一个对象的应用，不能将super赋给另一个对象变量，它只是一个指示编译器调用超类方法的特殊关键字。&lt;/li&gt;
+  &lt;li&gt;如果子类的构造器没有显示的调用超类的构造器，则将自动地调用超类默认（没有参数）的构造器。&lt;/li&gt;
+  &lt;li&gt;一个对象变量可以指示多种实际类型的现象被称为多态。在运行时能够自动地选择调用哪个方法的现象被称为动态绑定&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;超类对象任何时候都可以用子类对象置换&lt;/strong&gt;。反之则不行。如下&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Employee e; # 超类
+e = new Employee();
+e = new Manager();  # Manager是Employee的子类
+
+Manager manager = new Manager();
+Employee e = manager;# 非法
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这就是多态&lt;/p&gt;
+
+&lt;h4 id=&quot;枚举类&quot;&gt;枚举类&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;比较两个枚举类型的值时，永远不需要调用equals，而直接使用”==”就可以了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public enum Size {
+	SMALL,
+	MEDIUM,
+	LARGE
+}
+
+Size s = Enum.valueOf(Size.class,&quot;SMALL&quot;); # 通过toString的逆方法valueOf来获取枚举对象
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;反射&quot;&gt;反射&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;能够分析类能力的程序称为反射（reflective），反射可以用来做以下事情：
+    &lt;ul&gt;
+      &lt;li&gt;在运行时分析类的能力&lt;/li&gt;
+      &lt;li&gt;在运行时查看对象，例如，编写一个toString方法供所有类使用&lt;/li&gt;
+      &lt;li&gt;实现通用的数组操作代码&lt;/li&gt;
+      &lt;li&gt;利用Method对象，这个对象很像C++中的函数指针&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;反射是一种功能强大且复杂的机制。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Class.forName(“”) 创建类，然后通过newInstance()来创建对象，但是这种方式只能创建无参构造器。如果需要创建的类的构造器提供参数， 就不要使用上面那条语句， 而必须使用 Constructor 类中的 newlnstance 方法。&lt;/li&gt;
+  &lt;li&gt;反射机制最重要的内容-检查类的结构。在java.lang.reflect包中有三个类 Field、Method、Constructor分别用于描述类的域、方法和构造器。这三个类都有一个叫做getName的方法，用来返回项目的名称。&lt;/li&gt;
+  &lt;li&gt;Class类中的getFields、getMethods、getConstructors方法将分别返回类提供的public域、方法和构造器数组，其中包括超类的公有成员。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;继承的设计技巧&quot;&gt;继承的设计技巧&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;将公共操作和域放在超类&lt;/li&gt;
+  &lt;li&gt;不要使用受保护的域
+    &lt;ul&gt;
+      &lt;li&gt;因为子类集合是无限制的，任何一个人都能够由某个类派生一个子类，并编写代码以直接访问protected的实例，从而破坏了封装性。同一个包都能访问所有类的proteced域。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;使用继承实现”is-a”关系&lt;/li&gt;
+  &lt;li&gt;除非所有继承的方法都有意义，否则不要使用继承&lt;/li&gt;
+  &lt;li&gt;在覆盖方法时，不要改变预期的行为&lt;/li&gt;
+  &lt;li&gt;使用多态，而非类型信息&lt;/li&gt;
+  &lt;li&gt;不要过多的使用反射。反射是很脆弱的，即编译器很难帮助人们发现程序中的错误，因此只有在运行时才发现错误并导致异常。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;多态&quot;&gt;多态&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;通过超类能够引用不同的子类，只有在运行的时候才知道引用变量所指向的具体实例对象&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">第五章：继承</summary></entry><entry><title type="html">201711月学习计划</title><link href="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html" rel="alternate" type="text/html" title="201711月学习计划" /><published>2017-10-25T08:00:57+08:00</published><updated>2017-10-25T08:00:57+08:00</updated><id>http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92</id><content type="html" xml:base="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html">&lt;h2 id=&quot;201711月学习计划&quot;&gt;2017.11月学习计划&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-阅读&quot;&gt;1. 阅读&lt;/h3&gt;
 &lt;ul&gt;
@@ -150,6 +288,8 @@ while (i &amp;gt; 1) {
 
 &lt;p&gt;static final 静态变量。&lt;/p&gt;
 
+&lt;p&gt;也可以将方法或类声明为final类型，主要目的是确保它们不会在子类中改变语义。&lt;/p&gt;
+
 &lt;p&gt;静态方法是一种不能向对象实施操作的方法。有两种情况下使用静态方法：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -210,6 +350,81 @@ package com.google.hello&lt;/p&gt;
   &lt;li&gt;将职责过多的类进行分解&lt;/li&gt;
   &lt;li&gt;类名和方法名要能够体现他们的职责&lt;/li&gt;
   &lt;li&gt;优先使用不可变的类&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (staff[1] instanceof Manager) { #用instanceof先判断一下类型能否转换成功。
+	boss = (Manager) staff[1];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;只能在继承层次内进行类型转换&lt;/li&gt;
+  &lt;li&gt;在将超类转换成子类之前，应该使用instanceof进行检查。&lt;/li&gt;
+  &lt;li&gt;一般情况下，应该尽量少用类型转换和instanceof运算符&lt;/li&gt;
+  &lt;li&gt;为提高程序的清晰度，包含一个或多个抽象方法的类本身必须被声明为抽象的。&lt;/li&gt;
+  &lt;li&gt;抽象方法充当着占位的角色，它们的具体实现在子类中。扩展抽象类可以有两种选择。&lt;/li&gt;
+  &lt;li&gt;类即使不含抽象方法，也可以将类声明成抽象类。抽象类不能被实例化。&lt;/li&gt;
+  &lt;li&gt;子类也不能访问超类中的私有对象&lt;/li&gt;
+  &lt;li&gt;protected 对本包和所有子类可见。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public abstract class Person {
+	private String name;
+	public Person(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public abstract String getDescription();
+}
+
+public class Employee extends Person {
+	public Employee(String name,String major) {
+		super(name);
+		this.major = major;
+	}
+	
+	public String getDescription() {
+		return &quot;eeeee&quot;;
+	}
+}
+
+#定义了Person抽象类。Employee继承Person
+# 因为Person是抽象类，无法实例化，所以需要用子类实例化
+
+Person p = new Employee(&quot;long&quot;);
+System.out.print(p.getDescription());
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Object:所有类的超类&lt;/li&gt;
+  &lt;li&gt;Object类中的equals方法用于检测一个对象是否等于另外一个对象。判断两个对象是否具有相同的引用，如果两个对象具有相同的引用，它们一定是相等的。&lt;/li&gt;
+  &lt;li&gt;Objects.equals(a,null) 可以这样来判断a是否为null。当然一般情况下直接使用 == 来判断是否null更为直接简单&lt;/li&gt;
+  &lt;li&gt;字符串的散列码是由内容导出的。所以相同的String定义的变量的hashCode值是一样的。但是StringBuffer类中没有定义hashCode，它的散列码是由Object类的默认hashCode方法导出的对象存储地址。&lt;/li&gt;
+  &lt;li&gt;hashCode与equals结果必须一致，如果相同的两个对象，它们的hashCode是一致的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;tostring&quot;&gt;toString()&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;只要对象与一个字符串通过操作符”+”连接起来，Java编译器就会自动的调用toString方法，以便获得这个对象的字符串描述。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Person p = new Persion();
+System.out.print(&quot;name=&quot;+p);  #这里的会直接调用p.toString()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;打印数组，使用 Arrays.toString(数组)&lt;/li&gt;
+  &lt;li&gt;ArrayList是一个采用类型参数的泛型类。
+    &lt;ul&gt;
+      &lt;li&gt;ArrayList&lt;Person&gt; person = new ArrayList&amp;lt;&amp;gt;();&lt;/Person&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;trimToSize() 将数组列表的存储容量消减到当前尺寸&lt;/li&gt;
+  &lt;li&gt;Integer类对应的基本对象是int，将Integer类型的对象赋给int值时，将会自动的拆箱。&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">Java核心技术.卷1基础知识</summary></entry><entry><title type="html">【Java基础篇】第2章：Java程序设计环境</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html" rel="alternate" type="text/html" title="【Java基础篇】第2章：Java程序设计环境" /><published>2017-10-23T20:30:57+08:00</published><updated>2017-10-23T20:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/23/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83.html">&lt;h2 id=&quot;java核心技术卷1基础知识&quot;&gt;Java核心技术.卷1基础知识&lt;/h2&gt;
 
 &lt;h3 id=&quot;第2章java程序设计环境&quot;&gt;第2章：Java程序设计环境&lt;/h3&gt;
@@ -388,4 +603,4 @@ java webcome //java启动虚拟机执行放在class中的字节码&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Hello</title><link href="http://localhost:4000/2017/10/20/hello.html" rel="alternate" type="text/html" title="Hello" /><published>2017-10-20T00:00:00+08:00</published><updated>2017-10-20T00:00:00+08:00</updated><id>http://localhost:4000/2017/10/20/hello</id><content type="html" xml:base="http://localhost:4000/2017/10/20/hello.html">&lt;p&gt;hello code&lt;/p&gt;</content><author><name></name></author><summary type="html">hello code</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

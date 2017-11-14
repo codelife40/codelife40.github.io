@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="" />
-	<title>201711月学习计划 | </title>
+	<title>【Java基础篇】第6章：接口、lambda表达式与内部类 | </title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="http://localhost:4000/feed/" rel="alternate" title="" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css">
@@ -15,7 +15,7 @@
     <div id="container">
       <div id="main" role="main">
         <header>
-        <h1>201711月学习计划</h1>
+        <h1>【Java基础篇】第6章：接口、lambda表达式与内部类</h1>
         </header>
 
         <nav>
@@ -31,23 +31,74 @@
 
 
         <section class="post">
-<h2 id="201711月学习计划">2017.11月学习计划</h2>
-
-<h3 id="1-阅读">1. 阅读</h3>
+<h2 id="第六章接口lambda表达式与内部类">第六章：接口、lambda表达式与内部类</h2>
 <ul>
-  <li>《Java核心技术》</li>
-  <li>《尽在双11》</li>
+  <li>接口不是类，而是对类的一组需求描述，这些类要遵从接口描述的统一格式进行定义。</li>
+  <li>接口中所有的方法都自动的属于public。因此，在接口中声明方法时，不必提供关键字public。但是在实现类中必须将方法声明为public</li>
+  <li>implements 实现接口的关键字  class Person implements Comparable</li>
+  <li>可以使用instanceof来检查一个对象是否实现了某个特定的接口</li>
 </ul>
 
-<h3 id="2-编码">2. 编码</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (anyObject instanceof Comparable ) {...}
+</code></pre></div></div>
+
 <ul>
-  <li>Python基础语法温习</li>
-  <li>Go基础语法大概了解下</li>
+  <li>接口也可以扩展另外的接口，这个超类的使用方式一样。</li>
+  <li>接口中也可以定义变量，接口中的域都自动被设为 public static final类型.虽然可以显示定义，但是并不推荐，因为没必要有那么多冗余的关键字。</li>
+  <li>每个类只能够拥有一个超类，但却可以实现多个接口。这就为定义类的行为提供了极大的灵活性。比如要设计一个类具备克隆和比较的能力，实现两个接口即可。</li>
 </ul>
 
-<h3 id="3-英语">3. 英语</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Employee implements Cloneable,Comparable {
+	...
+}
+</code></pre></div></div>
 <ul>
-  <li>待定</li>
+  <li>有些情况下会有定义抽象类，然后在子类中重写抽象类中的方法。这个跟定义接口，然后继承接口实现方法有一定的相似性。但是抽象类有一个问题就是类的继承只能扩展一个类。</li>
+  <li>浅拷贝：如果clone对象中引用了其他的子对象，在clone的时候不会克隆子对象。</li>
+</ul>
+
+<h3 id="lambda表达式">lambda表达式</h3>
+<p>lambda表达式语法：
+参数，箭头-&gt;，以及一个表达式，如果代码要完成的计算无法放在一个表达式中，就可以将这些代码放在{}中，如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(String first,String second) - &gt;
+{
+	return first.length() - second.length();
+}
+</code></pre></div></div>
+
+<p>即使lambda表达式没有参数，仍然要提供空括号，就像无参方法一样。如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>() - &gt; { for (int i=100;i&gt;=0;i++) System.out.print(i);}
+</code></pre></div></div>
+
+<ul>
+  <li>this::equals 等同于x-&gt;this.equals(x)</li>
+  <li>使用lambda表达式的重点是延迟执行</li>
+  <li>repeat(10, () -&gt; System.out.println(“hello,world”));</li>
+</ul>
+
+<p><img src="media/15105886744529.jpg" alt="" /></p>
+
+<h4 id="代理略高级技术需深入">代理(略高级技术，需深入)</h4>
+<ul>
+  <li>利用代理可以在运行时创建一个实现了一组给定接口的新类，这种功能只有在编译时无法确定需要实现哪个接口时才有必要使用。</li>
+  <li>创建代理对象，需要使用Proxy类的newProxyInstance方法，这个方法有三个参数：
+    <ul>
+      <li>类加载器(class loader)</li>
+      <li>Class对象数组，每个元素都是需要实现的接口</li>
+      <li>调用处理器</li>
+    </ul>
+  </li>
+  <li>使用代理的原因：
+    <ul>
+      <li>路由对远程服务器的方法调用</li>
+      <li>在程序运行期间，将用户接口事件与动作关联起来</li>
+      <li>为调试，跟踪方法调用</li>
+    </ul>
+  </li>
+  <li>注意：代理类是在运行过程中创建的，一旦被创建，就变成了常规类，与虚拟机中的任何其他类没有什么区别</li>
+  <li>所有的代理类都扩展于Proxy类，一个代理类只有一个实例域-调用处理器，它定义在Proxy的超类中。</li>
 </ul>
 
 
@@ -58,7 +109,7 @@
 </span>
 <span class="time">
   /
-  <time datetime="2017-10-25">2017-10-25</time>
+  <time datetime="2017-11-12">2017-11-12</time>
 </span>
 <br />
 <span class="license">
@@ -68,7 +119,7 @@
 <span class="categories">
   in categories
   
-  <a href="http://localhost:4000/categories/#学习计划" title="学习计划">学习计划</a>&nbsp;
+  <a href="http://localhost:4000/categories/#Java基础篇" title="Java基础篇">Java基础篇</a>&nbsp;
   
 </span>
 
@@ -76,7 +127,7 @@
 <span class="tags">
   tagged with 
   
-  <a href="http://localhost:4000/tags/#学习计划" title="学习计划">学习计划</a>&nbsp;
+  <a href="http://localhost:4000/tags/#Java" title="Java">Java</a>&nbsp;
   
 </span>
 
@@ -88,7 +139,7 @@
 <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'mingxing'; // required: replace example with your forum shortname
-		var disqus_rul = 'http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html';
+		var disqus_rul = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -107,12 +158,12 @@ $(function(){
     var url = false;
         if (e.which == 37 || e.which == 74) {  // Left arrow and J
             
-        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html';
+        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html';
         
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             
-        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html';
+        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html';
         
         }
         if (url) {

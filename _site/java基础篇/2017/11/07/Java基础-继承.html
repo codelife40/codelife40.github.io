@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="" />
-	<title>201711月学习计划 | </title>
+	<title>【Java基础篇】第5章：继承 | </title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="http://localhost:4000/feed/" rel="alternate" title="" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css">
@@ -15,7 +15,7 @@
     <div id="container">
       <div id="main" role="main">
         <header>
-        <h1>201711月学习计划</h1>
+        <h1>【Java基础篇】第5章：继承</h1>
         </header>
 
         <nav>
@@ -31,23 +31,76 @@
 
 
         <section class="post">
-<h2 id="201711月学习计划">2017.11月学习计划</h2>
+<h2 id="第五章继承">第五章：继承</h2>
 
-<h3 id="1-阅读">1. 阅读</h3>
 <ul>
-  <li>《Java核心技术》</li>
-  <li>《尽在双11》</li>
+  <li>is-a 关系是继承的一个明显特征。</li>
+  <li>关键字 extends表示继承。表明正在构造的新类派生于一个已经存在的类，已存在的类称为超类(superclass)、基类(base class)或父类(parent class)</li>
+  <li>使用super.getMethod()来调用超类中的方法。super不是一个对象的应用，不能将super赋给另一个对象变量，它只是一个指示编译器调用超类方法的特殊关键字。</li>
+  <li>如果子类的构造器没有显示的调用超类的构造器，则将自动地调用超类默认（没有参数）的构造器。</li>
+  <li>一个对象变量可以指示多种实际类型的现象被称为多态。在运行时能够自动地选择调用哪个方法的现象被称为动态绑定</li>
+  <li><strong>超类对象任何时候都可以用子类对象置换</strong>。反之则不行。如下</li>
 </ul>
 
-<h3 id="2-编码">2. 编码</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Employee e; # 超类
+e = new Employee();
+e = new Manager();  # Manager是Employee的子类
+
+Manager manager = new Manager();
+Employee e = manager;# 非法
+</code></pre></div></div>
+<p>这就是多态</p>
+
+<h4 id="枚举类">枚举类</h4>
 <ul>
-  <li>Python基础语法温习</li>
-  <li>Go基础语法大概了解下</li>
+  <li>比较两个枚举类型的值时，永远不需要调用equals，而直接使用”==”就可以了</li>
 </ul>
 
-<h3 id="3-英语">3. 英语</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public enum Size {
+	SMALL,
+	MEDIUM,
+	LARGE
+}
+
+Size s = Enum.valueOf(Size.class,"SMALL"); # 通过toString的逆方法valueOf来获取枚举对象
+</code></pre></div></div>
+
+<h4 id="反射">反射</h4>
 <ul>
-  <li>待定</li>
+  <li>能够分析类能力的程序称为反射（reflective），反射可以用来做以下事情：
+    <ul>
+      <li>在运行时分析类的能力</li>
+      <li>在运行时查看对象，例如，编写一个toString方法供所有类使用</li>
+      <li>实现通用的数组操作代码</li>
+      <li>利用Method对象，这个对象很像C++中的函数指针</li>
+    </ul>
+  </li>
+  <li>
+    <p>反射是一种功能强大且复杂的机制。</p>
+  </li>
+  <li>Class.forName(“”) 创建类，然后通过newInstance()来创建对象，但是这种方式只能创建无参构造器。如果需要创建的类的构造器提供参数， 就不要使用上面那条语句， 而必须使用 Constructor 类中的 newlnstance 方法。</li>
+  <li>反射机制最重要的内容-检查类的结构。在java.lang.reflect包中有三个类 Field、Method、Constructor分别用于描述类的域、方法和构造器。这三个类都有一个叫做getName的方法，用来返回项目的名称。</li>
+  <li>Class类中的getFields、getMethods、getConstructors方法将分别返回类提供的public域、方法和构造器数组，其中包括超类的公有成员。</li>
+</ul>
+
+<h4 id="继承的设计技巧">继承的设计技巧</h4>
+<ul>
+  <li>将公共操作和域放在超类</li>
+  <li>不要使用受保护的域
+    <ul>
+      <li>因为子类集合是无限制的，任何一个人都能够由某个类派生一个子类，并编写代码以直接访问protected的实例，从而破坏了封装性。同一个包都能访问所有类的proteced域。</li>
+    </ul>
+  </li>
+  <li>使用继承实现”is-a”关系</li>
+  <li>除非所有继承的方法都有意义，否则不要使用继承</li>
+  <li>在覆盖方法时，不要改变预期的行为</li>
+  <li>使用多态，而非类型信息</li>
+  <li>不要过多的使用反射。反射是很脆弱的，即编译器很难帮助人们发现程序中的错误，因此只有在运行时才发现错误并导致异常。</li>
+</ul>
+
+<h4 id="多态">多态</h4>
+<ul>
+  <li>通过超类能够引用不同的子类，只有在运行的时候才知道引用变量所指向的具体实例对象</li>
 </ul>
 
 
@@ -58,7 +111,7 @@
 </span>
 <span class="time">
   /
-  <time datetime="2017-10-25">2017-10-25</time>
+  <time datetime="2017-11-07">2017-11-07</time>
 </span>
 <br />
 <span class="license">
@@ -68,7 +121,7 @@
 <span class="categories">
   in categories
   
-  <a href="http://localhost:4000/categories/#学习计划" title="学习计划">学习计划</a>&nbsp;
+  <a href="http://localhost:4000/categories/#Java基础篇" title="Java基础篇">Java基础篇</a>&nbsp;
   
 </span>
 
@@ -76,7 +129,7 @@
 <span class="tags">
   tagged with 
   
-  <a href="http://localhost:4000/tags/#学习计划" title="学习计划">学习计划</a>&nbsp;
+  <a href="http://localhost:4000/tags/#Java" title="Java">Java</a>&nbsp;
   
 </span>
 
@@ -88,7 +141,7 @@
 <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'mingxing'; // required: replace example with your forum shortname
-		var disqus_rul = 'http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html';
+		var disqus_rul = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -107,12 +160,12 @@ $(function(){
     var url = false;
         if (e.which == 37 || e.which == 74) {  // Left arrow and J
             
-        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/10/25/Java%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84.html';
+        url = 'http://localhost:4000/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/2017/10/25/201711%E6%9C%88%E8%AE%A1%E5%88%92.html';
         
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             
-        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/07/Java%E5%9F%BA%E7%A1%80-%E7%BB%A7%E6%89%BF.html';
+        url = 'http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html';
         
         }
         if (url) {

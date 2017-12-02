@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-14T09:12:33+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">【Java基础篇】第7章：异常、断言和日志</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html" rel="alternate" type="text/html" title="【Java基础篇】第7章：异常、断言和日志" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html">&lt;h2 id=&quot;第7章异常断言和日志&quot;&gt;第7章：异常、断言和日志&lt;/h2&gt;</content><author><name></name></author><category term="Java" /><summary type="html">第7章：异常、断言和日志</summary></entry><entry><title type="html">【Java基础篇】第6章：接口、lambda表达式与内部类</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html" rel="alternate" type="text/html" title="【Java基础篇】第6章：接口、lambda表达式与内部类" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html">&lt;h2 id=&quot;第六章接口lambda表达式与内部类&quot;&gt;第六章：接口、lambda表达式与内部类&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-14T16:23:48+08:00</updated><id>http://localhost:4000/</id><title type="html">Hello Code1</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">【Java基础篇】第7章：异常、断言和日志</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html" rel="alternate" type="text/html" title="【Java基础篇】第7章：异常、断言和日志" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E5%BC%82%E5%B8%B8%E5%8F%8A%E6%97%A5%E5%BF%97.html">&lt;h2 id=&quot;第7章异常断言和日志&quot;&gt;第7章：异常、断言和日志&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;异常对象都是派生于Throwable类的一个实例&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;简化的java异常层次结构图
+&lt;img src=&quot;media/15106256263252.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Throwable下一层分解为两个分支，Error和Exception
+    &lt;ul&gt;
+      &lt;li&gt;Error：描述了java运行时系统的内部错误和资源耗尽错误，应用程序不该抛出这类错误。&lt;/li&gt;
+      &lt;li&gt;Exception：又分解成两个分支
+        &lt;ul&gt;
+          &lt;li&gt;RuntimeException：由程序错误导致的异常&lt;/li&gt;
+          &lt;li&gt;IOException：程序本身没有问题，是由于像I/O错误这类问题导致的异常属于其他异常。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;自定义异常类，可以派生于Exception的类，或者子类的类。自定义的异常类应该包含两个构造器，一个是默认的构造器，另一个是带有详细描述信息的构造器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class FileFormatException extends IOException {
+	public FileFormatException() {};
+	public FileFormatException (String gripe) {
+		super(gripe);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;针对异常有两种处理方式。一种是通过try,catch捕获进行处理，一种是通过throw抛出异常。如果是基础性的功能，一些明确的异常情况可以通过哟throw抛出，让调用者处理这些异常信息。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;InputStream in = ...
+try {
+	try {
+		code..
+	} finally {
+		in.close();
+	}
+} catch (IOException e) {
+	show error message
+}
+
+嵌套一个try有一个好处，就是确保in是关闭状态的，而且如果在finally代码块中出现异常，也能被catch捕获。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;抛异常的准则：早抛出，晚捕获&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;断言&quot;&gt;断言&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;启动和禁用断言是类加载器(class loader)的功能。&lt;/li&gt;
+  &lt;li&gt;默认情况下，断言是被禁用的。可以在运行程序时用-enableassertions 或-ea选项进行启用。java -ea MyApp&lt;/li&gt;
+  &lt;li&gt;如果禁用的情况下，类加载器会自动跳过断言，因此不会降低程序运行的速度。&lt;/li&gt;
+  &lt;li&gt;什么时候选择使用断言：
+    &lt;ul&gt;
+      &lt;li&gt;断言失败是致命的、不可恢复的错误。&lt;/li&gt;
+      &lt;li&gt;断言检查只用于开发、测试阶段&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;日志&quot;&gt;日志&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;7个日志记录器级别(默认情况下，只记录前三个级别)
+    &lt;ul&gt;
+      &lt;li&gt;SERVER&lt;/li&gt;
+      &lt;li&gt;WARNING&lt;/li&gt;
+      &lt;li&gt;INFO&lt;/li&gt;
+      &lt;li&gt;CONFIG&lt;/li&gt;
+      &lt;li&gt;FINE&lt;/li&gt;
+      &lt;li&gt;FINER&lt;/li&gt;
+      &lt;li&gt;FINEST&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;默认的日志配置记录了INFO或更高级别的所有记录。默认的日志处理器不会处理低于INFO级别的信息。&lt;/li&gt;
+  &lt;li&gt;默认的日志记录将显示包含日志调用的类名和方法名，如同堆栈所显示的那样。&lt;/li&gt;
+  &lt;li&gt;记录程序中的异常信息，一般使用以下方法：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (...) {
+	IOException exception = new IOException(&quot;..&quot;);
+	logger.throwing(&quot;com.mycompay.app&quot;,&quot;read&quot;,exception);
+}
+
+或者
+
+try {
+	... 
+} catch (IOException e) {
+	logger.getLogger(&quot;com.mycompany.app&quot;).log(Level.WARNING, &quot;Reading image&quot;,e);
+}
+下面这种方式非常的普遍
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以通过编辑配置文件来修改日志系统的各种属性，默认情况下，配置文件存在于 jre/lib/logging.properties。如果想自定义存储配置文件，需要将 java.util.logging.config.file设定为特定路径文件&lt;/li&gt;
+  &lt;li&gt;默认情况下，日志记录器将记录发送到ConsoleHandler中，并由它输出到System.err流中。&lt;/li&gt;
+  &lt;li&gt;日志API提供了两个有用的日志处理器。
+    &lt;ul&gt;
+      &lt;li&gt;FileHandler：收集文件中的记录&lt;/li&gt;
+      &lt;li&gt;SocketHandler：将记录发送到指定的主机和端口&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;media/15106448236660.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;media/15106449168117.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Logger logger = Logger.getLogger(“com.mycompany.app”); 获取一个日志记录器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;调试技巧&quot;&gt;调试技巧&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;在每个类中放置一个单独的main方法，是一个非常有效的技巧，这样可以对每个类进行单元测试。（但常见的方式是在test目录下建对应的测试类）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class MyClass {
+	code
+	
+	public static void main(String[] args) {
+		test code
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;要想观察类的加载过程，可以用-verbose标志启动Java虚拟机。这种方法有助于诊断由于类路径引发的问题。&lt;/li&gt;
+  &lt;li&gt;Java虚拟机增加了对java应用程序进行监控（monitoring）和管理（management）的支持。它允许利用虚拟机中的代理装置跟踪内存消耗、线程使用、类加载等情况。&lt;/li&gt;
+  &lt;li&gt;JDK加载了一个称为jconsole的图形工具，可以用于显示虚拟机性能的统计结果。&lt;/li&gt;
+  &lt;li&gt;jmap 获得一个堆的转储，其中显示了堆中的每个对象。使用命令如下：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jmap -dump:format=b,file=dumpFileName processID
+jhat dumpFileName
+然后通过浏览器访问 localhost:7000 将会运行一个网络应用程序，借此探查转储对象时堆的内容。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;如果使用Xprof标志运行Java虚拟机，就会运行一个基本的剖析器来跟踪那些代码中经常被调用的方法。剖析信息将发送给System.out，输出结果中还会显示哪些方法是由即时编译器编译的。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Java" /><summary type="html">第7章：异常、断言和日志 异常对象都是派生于Throwable类的一个实例 简化的java异常层次结构图</summary></entry><entry><title type="html">【Java基础篇】第6章：接口、lambda表达式与内部类</title><link href="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html" rel="alternate" type="text/html" title="【Java基础篇】第6章：接口、lambda表达式与内部类" /><published>2017-11-12T22:30:57+08:00</published><updated>2017-11-12T22:30:57+08:00</updated><id>http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB</id><content type="html" xml:base="http://localhost:4000/java%E5%9F%BA%E7%A1%80%E7%AF%87/2017/11/12/%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%86%85%E9%83%A8%E7%B1%BB.html">&lt;h2 id=&quot;第六章接口lambda表达式与内部类&quot;&gt;第六章：接口、lambda表达式与内部类&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;接口不是类，而是对类的一组需求描述，这些类要遵从接口描述的统一格式进行定义。&lt;/li&gt;
   &lt;li&gt;接口中所有的方法都自动的属于public。因此，在接口中声明方法时，不必提供关键字public。但是在实现类中必须将方法声明为public&lt;/li&gt;
